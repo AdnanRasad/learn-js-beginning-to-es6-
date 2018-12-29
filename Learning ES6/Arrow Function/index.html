@@ -1,0 +1,48 @@
+<html>
+
+<script>
+    
+//ES5    
+const years=[1990, 1965, 1982,1937];
+//map method to loop over the array.
+
+//years er upor map re call diye map re ekta function dile o array er shokol value er upor oi function re call kore...and prottek bar oi function ja return kore ta niye ekta array banaye age5 array te dhukai....ei function gulo ke callback function bole,(when we pass a function to a function.)...map er documantiton e dekha jai o ekta callback function support kore and tar arg 3 ta porjnto hote pare jar 2 ta optional
+var age5=years.map(function(el){
+                   return 2016-el;
+         });
+    console.log(age5)
+    
+let age6= years.map(el=> 2016-el)
+    console.log(age6);
+    
+let age7= years.map((el,index)=> 
+    `${2016-el}:${index}`
+)
+    console.log(age7); 
+    
+    
+let age8= years.map((el,index)=> { 
+    
+    return `${2016-el}:${index}`
+})
+
+    console.log(age8);
+    
+ let age9= years.map((el,index)=> { 
+    
+    console.log('Hey'); 
+    return `${2016-el}:${index}`
+})
+
+    console.log(age9);   
+
+    
+    
+    
+//Arrow functions dont get their own this keyword
+//They use the this of the function they are written in: they have a lexical this
+    
+    
+</script>
+
+</html>

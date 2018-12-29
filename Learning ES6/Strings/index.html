@@ -1,0 +1,38 @@
+<html>
+
+
+<script>
+
+    
+    let fN='Adnan'
+    let lN='Kazi'
+    const yB=1995;
+    
+    function calcAge(year){
+        return 2016-year;
+    }
+    
+    
+    //ES5
+    console.log('This is '+fN+lN+ ' He was born '+yB+'. His age is: '+calcAge(yB)+' years old');
+    
+    //ES6 : Template Literal
+    console.log(`This is ${fN}${lN}.He was born in ${yB}. His age is ${calcAge(yB)} years old` )
+    
+    
+    
+    //New String Method:
+    const n=`${lN} ${fN}`;
+    console.log(n);
+    console.log(n.startsWith('K')); //case sensitive 
+    console.log(n.endsWith('n'));
+    console.log(n.includes('dn'));
+    console.log(n.repeat(5));
+    console.log(`${fN} `.repeat(5));
+
+    
+    
+</script>
+
+
+</html>
