@@ -7,13 +7,25 @@ const years=[1990, 1965, 1982,1937];
 //map method to loop over the array.
 
 //years er upor map re call diye map re ekta function dile o array er shokol value er upor oi function re call kore...and prottek bar oi function ja return kore ta niye ekta array banaye age5 array te dhukai....ei function gulo ke callback function bole,(when we pass a function to a function.)...map er documantiton e dekha jai o ekta callback function support kore and tar arg 3 ta porjnto hote pare jar 2 ta optional
+
+//years.map ja dibe take 'el' nam diye el ke function e pathacchi    
 var age5=years.map(function(el){
                    return 2016-el;
          });
     console.log(age5)
     
+//years.map ja dibe take 'el' nam diye el ke function e pathacchi    
+    
 let age6= years.map(el=> 2016-el)
     console.log(age6);
+
+    
+    
+//return axios.get(url).then(response => response.data); ei line ta ja myb kortese ta holo : see below cmnted 4 lines
+//axios.get('url')
+  //.then(function (response) {
+   // return(response);
+  //})
     
 let age7= years.map((el,index)=> 
     `${2016-el}:${index}`
